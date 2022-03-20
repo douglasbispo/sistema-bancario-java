@@ -1,12 +1,11 @@
-package sistemaBancario;
+package banco;
 
-public class Conta{
+public class Conta {
 
 	private String nomeTitular;
 	private int numero;
 	private double saldo;
 	private static int sequencia = 1;
-
 
 	public Conta(String nomeTitular, double saldo, int numero) {
 		super();
@@ -38,7 +37,7 @@ public class Conta{
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	
+
 	public static int getProximoNumero() {
 		return sequencia++;
 	}
